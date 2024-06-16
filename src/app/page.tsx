@@ -16,7 +16,7 @@ import ConnectWithMe from "@/components/ConnectWithMe/ConnectWithMe";
 export default function Home() {
 	return (
 		<div className="-z-50 bg-black">
-			<BackgroundBeams />
+			<BackgroundBeams className="hidden sm:block" />
 			<div className="relative z-20 ">
 				<Header />
 				<Hero />

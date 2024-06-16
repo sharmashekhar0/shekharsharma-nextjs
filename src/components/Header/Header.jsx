@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
+import { IoMenu } from "react-icons/io5";
 
 export default function Header() {
 	return (
 		<div className="h-fit border-neutral-600 text-white flex items-center justify-between px-8 sm:px-28 pt-8">
 			<Link href={"/"} prefetch>
-				<span className="text-6xl font-bold text-white">
+				<span className="text-7xl sm:text-6xl font-bold text-white">
 					S<span className="text-[#F4C430]">.</span>
 				</span>
 			</Link>
@@ -57,6 +58,7 @@ export default function Header() {
 					</span>
 				</button>
 			</a>
+			<IoMenu className="text-2xl text-slate-100 hover:text-zinc-300" />
 		</div>
 	);
 }
