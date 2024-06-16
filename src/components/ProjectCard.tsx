@@ -31,16 +31,18 @@ function ProjectCard({ project, className = "w-[20vw]" }: any) {
 					<p className="">{project.description}</p>
 					<div className="flex justify-between items-center h-12">
 						<div className="flex gap-2 flex-wrap">
-							{project?.techStack?.map((techIcon: any, index) => {
-								return (
-									<Image
-										key={`tech-icon-${index}`}
-										src={techIcon}
-										alt=""
-										className="h-8 w-8"
-									/>
-								);
-							})}
+							{project?.techStack?.map(
+								(techIcon: any, index: number) => {
+									return (
+										<Image
+											key={`tech-icon-${index}`}
+											src={techIcon}
+											alt=""
+											className="h-8 w-8"
+										/>
+									);
+								}
+							)}
 						</div>
 						{/* {project.isLive ? (
 							<span className="text-2xl text-slate-300 cursor-pointer">

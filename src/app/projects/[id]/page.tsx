@@ -29,7 +29,13 @@ import appwrite from "../../../../public/stack/appwrite.svg";
 import nextjs from "../../../../public/stack/nextjs.svg";
 import typescript from "../../../../public/stack/typescript.svg";
 
-function ProjectDetailPage({ params: { id } }) {
+type ParamsProps = {
+	params: {
+		id: string;
+	};
+};
+
+function ProjectDetailPage({ params: { id } }: ParamsProps) {
 	const router = useRouter();
 	const projects = [
 		{
