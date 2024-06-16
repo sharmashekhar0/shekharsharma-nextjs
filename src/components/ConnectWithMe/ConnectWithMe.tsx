@@ -18,7 +18,7 @@ function ConnectWithMe() {
 	};
 
 	return (
-		<div className="w-1/2 flex items-center justify-center text-white px-28">
+		<div className="w-1/2 flex items-center justify-center text-white sm:px-28">
 			<div className="h-80 w-96 flex flex-col items-center justify-between p-8 border border-neutral-900">
 				<span className="text-3xl font-bold">Connect with Me.</span>
 				<div className="flex gap-4 items-center">

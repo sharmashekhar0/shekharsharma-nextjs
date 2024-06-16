@@ -27,6 +27,21 @@ import { RiNextjsFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 
+import cloudinary from "../../../public/stack/cloudinary.svg";
+import html from "../../../public/stack/html.svg";
+import css from "../../../public/stack/css.svg";
+import reactjs from "../../../public/stack/reactjs.svg";
+import tailwindcss from "../../../public/stack/tailwindcss.svg";
+import redux from "../../../public/stack/redux.svg";
+import js from "../../../public/stack/js.svg";
+import node from "../../../public/stack/nodejs.svg";
+import express from "../../../public/stack/expressjs.svg";
+import mongodb from "../../../public/stack/mongodb.svg";
+import mongoose from "../../../public/stack/mongoose.svg";
+import appwrite from "../../../public/stack/appwrite.svg";
+import nextjs from "../../../public/stack/nextjs.svg";
+import typescript from "../../../public/stack/typescript.svg";
+
 function Projects() {
 	useEffect(() => {
 		AOS.init();
@@ -46,13 +61,19 @@ function Projects() {
 			description:
 				"A full-stack video sharing platform built with the MERN stack.",
 			techStack: [
-				<FaReact />,
-				<FaNode className="text-4xl" />,
-				<SiExpress />,
-				<SiMongodb />,
+				js,
+				reactjs,
+				tailwindcss,
+				redux,
+				cloudinary,
+				node,
+				express,
+				mongodb,
 			],
+			stack: ["Full Stack"],
 			isLive: false,
 			url: "",
+			githubRepoLink: "https://github.com/sharmashekhar0/VideoTube",
 			tag: ["all", "fullstack"],
 		},
 		{
@@ -60,13 +81,12 @@ function Projects() {
 			name: "Personal Portfolio Nextjs",
 			image: mern2,
 			description: "A dynamic portfolio website developed with Next.js.",
-			techStack: [
-				<RiNextjsFill className="text-3xl" />,
-				<RiTailwindCssFill />,
-				<SiTypescript />,
-			],
+			techStack: [nextjs, tailwindcss, typescript],
+			stack: ["Frontend"],
 			isLive: true,
 			url: "",
+			githubRepoLink:
+				"https://github.com/sharmashekhar0/shekharsharma-nextjs",
 			tag: ["all", "frontend"],
 		},
 		{
@@ -75,14 +95,11 @@ function Projects() {
 			image: mern3,
 			description:
 				"A task management application using the React.js and Appwrite.",
-			techStack: [
-				<FaReact />,
-				<RiTailwindCssFill />,
-				<TbBrandRedux />,
-				<SiAppwrite />,
-			],
+			techStack: [js, reactjs, tailwindcss, redux, appwrite],
+			stack: ["Frontend", , "Backend as a Service"],
 			isLive: true,
 			url: "",
+			githubRepoLink: "https://github.com/sharmashekhar0/TodoApp",
 			tag: ["all", "fullstack"],
 		},
 		{
@@ -90,23 +107,22 @@ function Projects() {
 			name: "Personal Portfolio (Old)",
 			image: mern4,
 			description: "An earlier portfolio version built with React.js.",
-			techStack: [
-				<FaReact />,
-				<RiTailwindCssFill />,
-				<IoLogoJavascript />,
-			],
+			techStack: [reactjs, tailwindcss, js],
+			stack: ["Frontend"],
 			isLive: true,
 			url: "",
+			githubRepoLink:
+				"https://github.com/sharmashekhar0/portfolio-reactjs",
 			tag: ["all", "frontend"],
 		},
 	];
 
 	return (
-		<div className="h-screen flex flex-col gap-8 bg-black text-white px-28">
-			<span className="text-5xl font-bold">Projects.</span>
-			<div className="w-fit gap-2 flex items-center justify-between bg-[#161616]  h-10 px-4 rmd">
+		<div className="min-h-screen flex flex-col gap-8 bg-black text-white px-8 sm:px-28">
+			<span className="text-3xl sm:text-5xl font-bold">Projects.</span>
+			<div className="w-fit gap-2 flex items-center justify-between text-sm sm:text-base bg-[#161616] h-10 sm:min-h-11 px-4 rounded">
 				<span
-					className={` px-4 py-1 rmd cursor-pointer ${
+					className={` px-2 sm:px-4 py-1 rounded cursor-pointer ${
 						selectedStack === "all"
 							? "bg-black text-white"
 							: "hover:bg-black hover:text-white"
@@ -116,7 +132,7 @@ function Projects() {
 					All
 				</span>
 				<span
-					className={` px-4 py-1 rmd cursor-pointer ${
+					className={` px-2 sm:px-4 py-1 rounded cursor-pointer ${
 						selectedStack === "frontend"
 							? "bg-black text-white"
 							: "hover:bg-black hover:text-white"
@@ -126,7 +142,7 @@ function Projects() {
 					Frontend
 				</span>
 				{/* <span
-					className={` px-4 py-1 rmd cursor-pointer ${
+					className={` px-2 sm:px-4 py-1 rounded cursor-pointer ${
 						selectedStack === "backend"
 							? "bg-black text-white"
 							: "hover:bg-black hover:text-white"
@@ -136,7 +152,7 @@ function Projects() {
 					Backend
 				</span> */}
 				<span
-					className={` px-4 py-1 rmd cursor-pointer ${
+					className={` px-2 sm:px-4 py-1 rounded cursor-pointer ${
 						selectedStack === "fullstack"
 							? "bg-black text-white"
 							: "hover:bg-black hover:text-white"
@@ -146,13 +162,26 @@ function Projects() {
 					Full Stack
 				</span>
 			</div>
-			<div className="grid grid-cols-4">
+			{/* <div className="grid grid-cols-4">
 				{projects
 					?.filter((project) => {
 						return project?.tag?.includes(selectedStack);
 					})
 					.map((project) => (
 						<ProjectCard key={project?.id} project={project} />
+					))}
+			</div> */}
+			<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8">
+				{projects
+					?.filter((project) => {
+						return project?.tag?.includes(selectedStack);
+					})
+					.map((project) => (
+						<ProjectCard
+							key={project?.id}
+							project={project}
+							className={"30vw"}
+						/>
 					))}
 			</div>
 			<Link href={"/projects"} prefetch>

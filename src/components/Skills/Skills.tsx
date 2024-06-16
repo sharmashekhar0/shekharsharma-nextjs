@@ -60,8 +60,8 @@ function Skills() {
 	const database = ["MongoDB", "PostgreSQL"];
 
 	return (
-		<div className="h-fit flex flex-col gap-8  text-white px-28">
-			<h2 className="text-5xl font-bold">Skills.</h2>
+		<div className="h-fit flex flex-col gap-8  text-white px-8 sm:px-28">
+			<h2 className="text-3xl sm:text-5xl font-bold">Skills.</h2>
 			{/* <div className="flex flex-col text-3xl items-center justify-center">
 				<Marquee>
 					<CardContainer className="inter-var mx-2">
@@ -234,10 +234,10 @@ function Skills() {
 					</CardContainer>
 				</Marquee>
 			</div> */}
-			<div className="h-fit w-full flex justify-between">
+			<div className="h-fit w-full grid grid-cols-1 sm:grid-cols-4 gap-4">
 				<div
 					// data-aos="flip-left"
-					className="w-[20vw] border border-neutral-900 min-h-40 rounded p-6 bg-zinc-950 flex flex-col gap-2"
+					className="w-full sm:w-[20vw] border border-neutral-900 min-h-40 rounded p-6 bg-zinc-950 flex flex-col gap-2"
 				>
 					<span className="text-xl font-bold p-2 rounded text-center">
 						Frontend.
@@ -259,7 +259,7 @@ function Skills() {
 				</div>
 				<div
 					// data-aos="flip-left"
-					className="w-[20vw] border border-neutral-900 min-h-40 rounded p-6 bg-zinc-950 flex flex-col gap-2"
+					className="w-full sm:w-[20vw] border border-neutral-900 min-h-40 rounded p-6 bg-zinc-950 flex flex-col gap-2"
 				>
 					<span className="text-xl font-bold p-2 rounded text-center">
 						Backend.
@@ -283,7 +283,7 @@ function Skills() {
 				</div>
 				<div
 					// data-aos="flip-left"
-					className="w-[20vw] border border-neutral-900 min-h-40 rounded p-6 bg-zinc-950 flex flex-col gap-2"
+					className="w-full sm:w-[20vw] border border-neutral-900 min-h-40 rounded p-6 bg-zinc-950 flex flex-col gap-2"
 				>
 					<span className="text-xl font-bold p-2 rounded text-center">
 						Database.
@@ -307,7 +307,7 @@ function Skills() {
 				</div>
 				<div
 					// data-aos="flip-left"
-					className="w-[20vw] border border-neutral-900 min-h-40 rounded p-6 bg-zinc-950 flex flex-col gap-2"
+					className="w-full sm:w-[20vw] border border-neutral-900 min-h-40 rounded p-6 bg-zinc-950 flex flex-col gap-2"
 				>
 					<span className="text-xl font-bold p-2 rounded text-center">
 						Things I'm Learning.

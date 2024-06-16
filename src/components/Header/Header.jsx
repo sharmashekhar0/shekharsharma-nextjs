@@ -3,37 +3,42 @@ import Link from "next/link";
 
 export default function Header() {
 	return (
-		<div className="h-fit border-neutral-600 text-white flex items-center justify-between px-28 pt-8">
-			<Link href={"/"}>
+		<div className="h-fit border-neutral-600 text-white flex items-center justify-between px-8 sm:px-28 pt-8">
+			<Link href={"/"} prefetch>
 				<span className="text-6xl font-bold text-white">
 					S<span className="text-[#F4C430]">.</span>
 				</span>
 			</Link>
-			<div className="flex w-1/3 justify-between font-medium text-md items-center">
-				<Link href={"/"}>
+			<div className="hidden sm:flex w-1/3 justify-between font-medium text-md items-center">
+				<Link href={"/"} prefetch>
 					<span className="cursor-pointer font-medium hover:text-[#F4C430]">
 						Home
 					</span>
 				</Link>
-				<span className="cursor-pointer font-medium hover:text-[#F4C430]">
-					Projects
-				</span>
-				<Link href={"/education"}>
+				<Link href={"/experience"}>
+					<span className="cursor-pointer font-medium hover:text-[#F4C430]">
+						Experience
+					</span>
+				</Link>
+				<Link href={"/projects"} prefetch>
+					<span className="cursor-pointer font-medium hover:text-[#F4C430]">
+						Projects
+					</span>
+				</Link>
+				<Link href={"/education"} prefetch>
 					<span className="cursor-pointer font-medium hover:text-[#F4C430]">
 						Education
 					</span>
 				</Link>
-				<span className="cursor-pointer font-medium hover:text-[#F4C430]">
-					Contact
-				</span>
 			</div>
-			{/* <span className="cursor-pointer font-medium hover:text-[#F4C430] bg-red-900 p-1 px-4 rounded-md border border-neutral-400">
+			{/* <span className="cursor-pointer font-medium hover:text-[#F4C430] bg-red-900 p-1 px-4 rounded border border-neutral-400">
 					Resume
 				</span> */}
 			<a
 				href="/Shekhar_Sharma_Experienced_2024.pdf"
 				target="_blank"
 				download="Shekhar_Sharma_Experienced_2024"
+				className="hidden sm:block"
 			>
 				<button className="button" type="button">
 					<span className="button__text">Resume</span>

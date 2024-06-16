@@ -16,14 +16,13 @@ function Hero() {
 		AOS.init();
 	}, []);
 	return (
-		<div className="h-[calc(100vh-80px)] z-20 flex items-center">
-			<div className="flex flex-col px-28">
-				<span className="text-white text-[108px] leading-[100px] font-bold">
-					Hi,
-				</span>
-				<span className="text-white text-[108px] leading-[100px] font-bold">
-					I'm Shekhar
-				</span>
+		<div className="h-[calc(100vh-80px)] z-20 flex items-center w-full">
+			<div
+				className="flex flex-col px-8 sm:px-28 text-white text-4xl sm:text-[108px] sm:leading-[100px] font-bold
+"
+			>
+				<span className="">Hi,</span>
+				<span className="">I'm Shekhar</span>
 				{/* <FollowerPointerCard
 					title={
 						<TitleComponent
@@ -33,10 +32,10 @@ function Hero() {
 					}
 					className="flex flex-col"
 				> */}
-				<span className="text-white text-[108px] leading-[100px] font-bold">
+				<span className="">
 					<FlipWords className="px-0 mx-0" words={words} />
 				</span>
-				<span className="text-white text-[108px] leading-[100px] font-bold">
+				<span className="">
 					Web Developer<span className="text-[#F4C430]">.</span>
 				</span>
 				{/* </FollowerPointerCard> */}
