@@ -36,10 +36,11 @@ function About() {
 					complex challenges and deliver high-quality solutions.
 				</span>
 				<span className="text-[#999999] text-lg">
-					When I'm not coding, I enjoy exploring new technologies and
-					staying updated with the latest trends in the tech world. My
-					dedication to continuous learning and improvement drives my
-					success in the ever-evolving field of web development.
+					When I&apos;m not coding, I enjoy exploring new technologies
+					and staying updated with the latest trends in the tech
+					world. My dedication to continuous learning and improvement
+					drives my success in the ever-evolving field of web
+					development.
 				</span>
 			</div>
 		</div>

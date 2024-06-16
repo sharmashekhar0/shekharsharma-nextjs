@@ -310,7 +310,7 @@ function Skills() {
 					className="w-full sm:w-[20vw] border border-neutral-900 min-h-40 rounded p-6 bg-zinc-950 flex flex-col gap-2"
 				>
 					<span className="text-xl font-bold p-2 rounded text-center">
-						Things I'm Learning.
+						Things I&apos;m Learning.
 					</span>
 					{learning?.map((skill, index) => {
 						console.log(

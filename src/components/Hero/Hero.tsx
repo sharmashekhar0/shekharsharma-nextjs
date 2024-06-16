@@ -22,7 +22,7 @@ function Hero() {
 "
 			>
 				<span className="">Hi,</span>
-				<span className="">I'm Shekhar</span>
+				<span className="">I&apos;m Shekhar</span>
 				{/* <FollowerPointerCard
 					title={
 						<TitleComponent
