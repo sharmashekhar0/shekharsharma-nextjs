@@ -88,7 +88,7 @@ export default function Header() {
 							: "animate__slideInRight"
 					} `}
 				>
-					<div className=" h-screen w-4/5 bg-black flex flex-col justify-between">
+					<div className="h-screen w-4/5 bg-black flex flex-col justify-between">
 						<div className="flex flex-col h-full">
 							<div className="h-16 flex items-center justify-end px-4">
 								<IoClose
@@ -96,7 +96,7 @@ export default function Header() {
 									onClick={closeMenu}
 								/>
 							</div>
-							<div className="px-8 flex flex-col gap-4 p-4">
+							<div className="px-8 flex flex-col gap-8 p-4">
 								<Link
 									href={"/"}
 									prefetch
