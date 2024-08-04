@@ -22,7 +22,6 @@ const Experience = () => {
 
 	return (
 		<div className="p-6 h-screen">
-			{/* <p className="text-xs opacity-45 text-center mb-4">{`(This page is still in development. Content may not be accurate.)`}</p> */}
 			<p className="text-center text-white text-2xl sm:text-3xl mb-6 font-extrabold  md:no-underline underline-offset-8 decoration-[#F11A7B]">
 				Experience
 			</p>

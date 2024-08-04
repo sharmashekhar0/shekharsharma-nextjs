@@ -115,15 +115,14 @@ function Projects() {
 
 	return (
 		<div className="p-6 min-h-screen flex flex-col gap-8 bg-black text-white px-8 sm:px-28">
-			{/* <p className="text-xs opacity-45 text-center mb-4">{`(This page is still in development. Content may not be accurate.)`}</p> */}
 			<p className="text-center text-white text-2xl sm:text-3xl mb-6 font-extrabold md:no-underline underline-offset-8 decoration-[#F11A7B]">
 				Projects
 			</p>
 			<AnimatedDiv>
-				<div className="min-h-screen flex flex-col gap-8 bg-black text-white sm:px-28">
-					<span className="text-3xl sm:text-5xl font-bold">
+				<div className="min-h-screen flex flex-col gap-8 bg-black text-white ">
+					{/* <span className="text-3xl sm:text-5xl font-bold">
 						Projects.
-					</span>
+					</span> */}
 					<div className="w-fit gap-2 flex items-center justify-between text-sm sm:text-base bg-[#161616] h-10 sm:min-h-11 px-4 rounded">
 						<span
 							className={` px-2 sm:px-4 py-1 rounded cursor-pointer ${
