@@ -11,7 +11,23 @@ import React from "react";
 const Experience = () => {
 	const Experience = [
 		{
-			Date: "Aug 2023-Present",
+			Date: "January 2025-Present",
+			title: "Software Engineer",
+			School: "PayNways",
+			location: "Noida, Uttar Pradesh",
+			description: "Graduated Matricuation",
+			bg: "#34068a",
+		},
+		{
+			Date: "July 2024-January 2025",
+			title: "Software Engineer (Intern)",
+			School: "PayNways",
+			location: "Noida, Uttar Pradesh",
+			description: "Graduated Matricuation",
+			bg: "#34068a",
+		},
+		{
+			Date: "April 2024-July 2024",
 			title: "Full Stack Developer (MERN)",
 			School: "Weavers Infotech",
 			location: "Kanpur, Uttar Pradesh",

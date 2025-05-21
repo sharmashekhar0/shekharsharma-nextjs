@@ -15,32 +15,33 @@ function About() {
 			<span className="text-3xl sm:text-5xl font-bold">About.</span>
 			<div className="flex justify-between gap-6 flex-col">
 				<span className="text-[#999999] text-lg">
-					Hi! I am Shekhar Sharma, and I am from Uttar Pradesh, India.
-					I work as a Full Stack Developer at Weavers Infotech, where
-					I channel my passion for coding into creating innovative and
-					efficient web solutions.
+					I am a Software Engineer at PayNways, specializing in
+					developing enterprise-level applications using AngularJS,
+					Angular 19, and Spring Boot. I design and implement scalable
+					frontend architectures while also contributing to robust
+					backend services and RESTful APIs.
 				</span>
 				<span className="text-[#999999] text-lg">
-					I love to code, solve problems on LeetCode, and develop
-					interesting projects that push the boundaries of my
-					technical skills. As a proficient web developer, I have an
-					extensive knowledge base in HTML, CSS, and JavaScript. My
-					expertise is further enhanced by my experience with Tailwind
-					CSS, Bootstrap, React.js, and Node.js.
+					With a strong command over Angular’s reactive forms, RxJS,
+					and state management patterns, I build high-performance,
+					maintainable UI components. On the server side, I work with
+					Spring Boot to create secure, scalable, and efficient
+					backend systems integrated with modern databases and
+					authentication layers.
 				</span>
 				<span className="text-[#999999] text-lg">
-					In addition to these front-end technologies, I have a strong
-					command of Express and MongoDB, which allows me to build
-					robust and scalable back-end systems. My problem-solving
-					skills are one of my strongest assets, enabling me to tackle
-					complex challenges and deliver high-quality solutions.
+					My experience spans full-stack development, system design,
+					and end-to-end application delivery. I actively apply best
+					practices such as modular coding, test-driven development
+					(TDD), and CI/CD pipelines to ensure quality and
+					maintainability.
 				</span>
 				<span className="text-[#999999] text-lg">
-					When I&apos;m not coding, I enjoy exploring new technologies
-					and staying updated with the latest trends in the tech
-					world. My dedication to continuous learning and improvement
-					drives my success in the ever-evolving field of web
-					development.
+					I bring a deep understanding of software engineering
+					principles, clean architecture, and modern development
+					workflows. My focus remains on building production-grade
+					solutions that are optimized for performance, security, and
+					scalability.
 				</span>
 			</div>
 		</div>
